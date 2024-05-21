@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+           
+        }
+        form input {
+            height: 30px;
+            border-radius: 12px;
+            border: solid 1px orangered;
+            background-color: rgb(229, 255, 190);
+            text-align: center;
+
+        }
+        .button{
+            width: 170px;
+            border: solid 1px orangered;
+            border-radius: 12px;
+            background-color: greenyellow;
+            box-shadow: 2px 2px 10px 1px rgb(30, 255, 0);
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        div{
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="calculatrice.php" method="get">
+        
+        <fieldset style=" background-color: rgb(230, 216, 199);">
+            <legend>Calculatrice</legend>
+            <input type="number" name="FN" placeholder="First number"><br>
+            <div>
+                <input type="radio" name="operator" value="+"> 
+                <label for="plus"> + </label>
+            </div>
+            
+            <div>
+                <input type="radio" name="operator" value="-"> 
+                <label for="moin"> - </label>
+            </div>
+            
+            <div>
+                <input type="radio" name="operator" value="*"> 
+                <label for="multiplication"> x </label>
+            </div>
+            
+            <div>
+                <input type="radio" name="operator" value="÷"> 
+                <label for="div">  <b> ÷ </b> </label><br>
+            </div>
+            
+
+            <input type="number" name="SN" placeholder="second number"> <br><br>
+
+            <input type="submit" name="resultat" value="       =      " class="button" >
+
+        </fieldset>
+    </form>
+</body>
+</html>
